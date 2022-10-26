@@ -1,71 +1,47 @@
-<!DOCTYPE html>
-<!--[if lt IE 7]>      <html class="no-js lt-ie9 lt-ie8 lt-ie7"> <![endif]-->
-<!--[if IE 7]>         <html class="no-js lt-ie9 lt-ie8"> <![endif]-->
-<!--[if IE 8]>         <html class="no-js lt-ie9"> <![endif]-->
-<!--[if gt IE 8]>      <html class="no-js"> <![endif]-->
-<html>
-
-<head>
-  <meta charset="utf-8">
-  <meta http-equiv="X-UA-Compatible" content="IE=edge">
-  <title>Build a Tic Tac Toe Game</title>
-  <meta name="description" content="Build a Tic Tac Toe Game">
-  <meta name="viewport" content="width=device-width, initial-scale=1">
-  <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Architects+Daughter" type="text/css">
-  <link rel="stylesheet" href="styles.css">
-</head>
-
-<body>
-  <!--[if lt IE 7]>
-    <p class="browsehappy">You are using an <strong>outdated</strong> browser. Please <a href="#">upgrade your browser</a> to improve your experience.</p>
-  <![endif]-->
-  <div class="outer-container">
-    <button class="hard-reset">Reset All</button>
-    <p class="score-1">
-      <span class="points"></span><span class="name"></span>
-    </p>
-    <i class="points-divider">&#124;</i>
-    <p class="score-2">
-      <span class="points"></span><span class="name"></span>
-    </p>
-    <div class="player-one-turn">
-      <p></p>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Architects+Daughter" type="text/css">
+<div class="outer-container">
+  <button class="hard-reset">Reset All</button>
+  <p class="score-1">
+    <span class="points"></span><span class="name"></span>
+  </p>
+  <i class="points-divider">&#124;</i>
+  <p class="score-2">
+    <span class="points"></span><span class="name"></span>
+  </p>
+  <div class="player-one-turn">
+    <p></p>
+  </div>
+  <div class="player-two-turn">
+    <p></p>
+  </div>
+  <div class="board-container">
+    <div class="game-starter">
+      <p>Would you like to be X or O?</p>
+      <button class="choose-x">X</button>
+      <button class="choose-o">O</button>
+      <button class="back-button">
+        <i class="fa fa-arrow-left"></i>
+        Back
+      </button>
     </div>
-    <div class="player-two-turn">
-      <p></p>
+    <div class="game-choice">
+      <p>How do you want to play?</p>
+      <button class="one-player">One Player</button>
+      <button class="two-player">Two Player</button>
     </div>
-    <div class="board-container">
-      <div class="game-starter">
-        <p>Would you like to be X or O?</p>
-        <button class="choose-x">X</button>
-        <button class="choose-o">O</button>
-        <button class="back-button">
-          <i class="fa fa-arrow-left"></i>
-          Back
-        </button>
+    <div class="game-board">
+      <div class="draw-message">
+        <p>It was a draw..</p>
       </div>
-      <div class="game-choice">
-        <p>How do you want to play?</p>
-        <button class="one-player">One Player</button>
-        <button class="two-player">Two Player</button>
+      <div class="lose-message">
+        <p>Uh oh, you lost..</p>
       </div>
-      <div class="game-board">
-        <div class="draw-message">
-          <p>It was a draw..</p>
-        </div>
-        <div class="lose-message">
-          <p>Uh oh, you lost..</p>
-        </div>
-        <div class="win-message">
-          <p>You Won!!! :)</p>
-        </div>
-        <canvas id="myCanvas"></canvas>
-        <ul class="boxes"></ul>
+      <div class="win-message">
+        <p>You Won!!! :)</p>
       </div>
+      <canvas id="myCanvas"></canvas>
+      <ul class="boxes"></ul>
     </div>
   </div>
-  <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/2.1.3/jquery.min.js"></script>
-  <script src="script.js" async defer></script>
-</body>
-
-</html>
+</div>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/2.1.3/jquery.min.js"></script>
